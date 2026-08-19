@@ -218,6 +218,11 @@ function App() {
                   <span>XP {p.baseExperience}</span>
                 </div>
 
+                <div className="card__category" aria-label={`${capitalize(p.name)} category`}>
+                  <span className="card__category-label">Category</span>
+                  <strong>{p.category}</strong>
+                </div>
+
                 <div className="card__abilities" aria-label={`${capitalize(p.name)} abilities`}>
                   {p.abilities.length > 0 ? (
                     p.abilities.map((ability) => (
